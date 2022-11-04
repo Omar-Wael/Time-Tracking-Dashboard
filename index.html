@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <!-- CSS style file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts [Rubik font] -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- start side -->
+    <aside>
+      <section class="container">
+        <section class="user">
+          <div class="photo">
+            <img src="images/image-jeremy.png" alt="photo" />
+          </div>
+          <div class="text">
+            <p>Reported for</p>
+            <h1>Jeremy Robson</h1>
+          </div>
+        </section>
+        <section class="duration">
+          <ul>
+            <li>Daily</li>
+            <li class="active">Weekly</li>
+            <li>Monthly</li>
+          </ul>
+        </section>
+      </section>
+    </aside>
+    <!-- end side -->
+    <!-- start main -->
+    <main>
+      <section class="cards-container">
+        <section class="card" id="work">
+          <div class="card-background">
+            <img src="images/icon-work.svg" alt="work" />
+          </div>
+          <div class="card-data">
+            <div class="top">
+              <h3>Work</h3>
+              <img src="images/icon-ellipsis.svg" alt="menu" />
+            </div>
+            <div>
+              <h1>hrs</h1>
+              <p>Last week - hrs</p>
+            </div>
+          </div>
+        </section>
+        <section class="card" id="play">
+          <div class="card-background">
+            <img src="images/icon-play.svg" alt="play" />
+          </div>
+          <div class="card-data">
+            <div class="top">
+              <h3>Play</h3>
+              <img src="images/icon-ellipsis.svg" alt="menu" />
+            </div>
+            <div>
+              <h1>hrs</h1>
+              <p>Last week - hrs</p>
+            </div>
+          </div>
+        </section>
+        <section class="card" id="study">
+          <div class="card-background">
+            <img src="images/icon-study.svg" alt="study" />
+          </div>
+          <div class="card-data">
+            <div class="top">
+              <h3>Study</h3>
+              <img src="images/icon-ellipsis.svg" alt="menu" />
+            </div>
+            <div>
+              <h1>hrs</h1>
+              <p>Last week - hrs</p>
+            </div>
+          </div>
+        </section>
+        <section class="card" id="exercise">
+          <div class="card-background">
+            <img src="images/icon-exercise.svg" alt="exercise" />
+          </div>
+          <div class="card-data">
+            <div class="top">
+              <h3>Exercise</h3>
+              <img src="images/icon-ellipsis.svg" alt="menu" />
+            </div>
+            <div>
+              <h1>hrs</h1>
+              <p>Last week - hrs</p>
+            </div>
+          </div>
+        </section>
+        <section class="card" id="social">
+          <div class="card-background">
+            <img src="images/icon-social.svg" alt="social" />
+          </div>
+          <div class="card-data">
+            <div class="top">
+              <h3>Social</h3>
+              <img src="images/icon-ellipsis.svg" alt="menu" />
+            </div>
+            <div>
+              <h1>hrs</h1>
+              <p>Last week - hrs</p>
+            </div>
+          </div>
+        </section>
+        <section class="card" id="self-care">
+          <div class="card-background">
+            <img src="images/icon-self-care.svg" alt="self-care" />
+          </div>
+          <div class="card-data">
+            <div class="top">
+              <h3>Self Care</h3>
+              <img src="images/icon-ellipsis.svg" alt="menu" />
+            </div>
+            <div>
+              <h1>hrs</h1>
+              <p>Last week - hrs</p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Omar Wael</a>.
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

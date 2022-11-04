@@ -52,4 +52,3 @@ Users should be able to:
 
 - LinkedIn - [Omar Wael](https://www.linkedin.com/in/omar-wael/)
 - Frontend Mentor - [@Omar-Wael](https://www.frontendmentor.io/profile/Omar-Wael)
-# Time-Tracking-Dashboard

@@ -1,0 +1,278 @@
+/* Start Variables */
+:root {
+  /* ### Primary */
+  --Blue: hsl(246, 80%, 60%);
+  --Light-red-work: hsl(15, 100%, 70%);
+  --Soft-blue-play: hsl(195, 74%, 62%);
+  --Light-red-study: hsl(348, 100%, 68%);
+  --Lime-green-exercise: hsl(145, 58%, 55%);
+  --Violet-social: hsl(264, 64%, 52%);
+  --Soft-orange-self-care: hsl(43, 84%, 65%);
+  /* ### Neutral */
+  --Very-dark-blue: hsl(226, 43%, 10%);
+  --Dark-blue: hsl(235, 46%, 20%);
+  --Desaturated-blue: hsl(235, 45%, 61%);
+  --Pale-Blue: hsl(236, 100%, 87%);
+}
+/* end Variables */
+/* start global rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--Very-dark-blue);
+  font-family: "Rubik", sans-serif;
+  /* margin: 0px;
+  padding: 330px 280px; */
+  margin: auto;
+  padding: 100px 100px;
+  display: grid;
+  grid-template-areas: "aside main main main" "aside main main main";
+  grid-template-columns: 200px auto;
+  column-gap: 20px;
+  color: white;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+/* end global rules */
+/* start aside */
+aside {
+  grid-area: aside;
+  max-height: 415px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+aside .container {
+  background-color: var(--Dark-blue);
+  max-height: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+aside .container .user {
+  min-height: 290px;
+  padding: 30px 20px;
+  background-color: var(--Desaturated-blue);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+aside .container .user .photo {
+  min-height: 70px;
+  min-width: 70px;
+  max-width: 70px;
+  max-height: 70px;
+  margin-bottom: 30px;
+}
+aside .container .user .photo img {
+  width: 100%;
+  border: 2px solid var(--Pale-Blue);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+aside .container .user .text {
+}
+aside .container .user .text p {
+  font-size: 12px;
+  color: var(--Pale-Blue);
+  margin: 5px auto;
+}
+aside .container .user .text h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+  margin: 5px auto;
+}
+aside .container .duration {
+  padding: 30px 20px;
+  min-height: 130px;
+}
+aside .container .duration ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  gap: 20px;
+  flex-direction: column;
+  font-size: 12px;
+}
+aside .container .duration ul li {
+  color: var(--Pale-Blue);
+  cursor: pointer;
+}
+aside .container .duration ul li.active,
+aside .container .duration ul li:hover {
+  font-weight: 500;
+  color: white;
+}
+/* end aside */
+
+/* start main */
+main {
+  grid-area: main;
+  max-height: 415px;
+}
+main .cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  max-height: 100%;
+  min-height: 100%;
+}
+main .cards-container .card {
+  height: 195px;
+  border-radius: 10px;
+  position: relative;
+}
+main .cards-container .card .card-background {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+main .cards-container .card .card-background img {
+  position: inherit;
+  top: -10px;
+  right: 15px;
+  width: 69px;
+}
+#exercise .card-background img {
+  top: 0;
+}
+#self-care .card-background img {
+  width: 54px;
+}
+/* main .cards-container .social .card-background img {
+  top: 0;
+} */
+main .cards-container .card .card-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--Dark-blue);
+  padding: 25px;
+  /* margin-top: 20px; */
+  position: absolute;
+  width: 100%;
+  height: 160px;
+  top: 35px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+main .cards-container .card .card-data:hover {
+  background-color: hsl(236, 41%, 34%);
+}
+main .cards-container .card .card-data .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .cards-container .card .card-data .top h3 {
+  margin: 0;
+}
+main .cards-container .card .card-data .top {
+}
+main .cards-container .card .card-data .top img {
+}
+main .cards-container .card .card-data {
+}
+main .cards-container .card .card-data div h1 {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 300;
+}
+main .cards-container .card .card-data {
+}
+main .cards-container .card .card-data div p {
+  margin: 0;
+}
+#work {
+  background-color: var(--Light-red-work);
+}
+#play {
+  background-color: var(--Soft-blue-play);
+}
+#study {
+  background-color: var(--Light-red-study);
+}
+#exercise {
+  background-color: var(--Lime-green-exercise);
+}
+#social {
+  background-color: var(--Violet-social);
+}
+#self-care {
+  background-color: var(--Soft-orange-self-care);
+}
+/* end main */
+
+/* Media Queries */
+@media (min-width: 375px) and (max-width: 763px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 15px;
+    gap: 20px;
+    min-height: 1469px;
+  }
+  aside {
+    max-height: 210px;
+  }
+  aside .container .user .photo {
+    margin-bottom: 0px;
+  }
+  aside .container .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: fit-content;
+  }
+  aside .container .duration {
+    min-height: fit-content;
+  }
+  aside .container .duration ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+  main .cards-container {
+    display: flex;
+    flex-direction: column;
+  }
+  main .cards-container .card {
+    max-height: 160px;
+  }
+  main .cards-container .card .card-data {
+    justify-content: space-evenly;
+    max-height: 120px;
+    top: 40px;
+  }
+  main .cards-container .card .card-data div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .cards-container .card .card-data div h1 {
+    font-size: 30px;
+  }
+}
